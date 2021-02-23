@@ -6,7 +6,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta property="og:image" content="https://sanifalahwedding.github.io/public/picture/invitation.jpg">
-<meta name="description" content="Wedding Announcement of Sani & Falah"/>
+<meta name="description" content="Wedding Invitation of Sani & Falah"/>
 <meta name="keywords" content="Undangan Pernikahan Digital" />
 <meta name="author" content="falahfkh" />
 
@@ -261,15 +261,15 @@
 
                 <div class="row">
                     <div class="col-md-8 col-md-push-2">
-                        <form action="https://formsubmit.co/78efe6d29610c23c8f73cad1af3a9d87" method="POST">
+                        <form id="guestBook">
                           <div class="row">
-                              <div class="col-md-6">
+                              <div class="col-md-6" id="nama-group">
                                   <label>Nama*</label>
                                   <input type="text" name="name" id ="name" class="form-control form-opacity" required>
                               </div>
 
 
-                              <div class="col-md-6">
+                              <div class="col-md-6" id="kehadiran-group">
                                   <label>Kamu akan hadir?</label>
                                   <label for="kehadiran" class="sr-only">Kehadiran</label>
                                     <select class="form-control form-opacity" id="kehadiran" name="kehadiran">
@@ -277,7 +277,7 @@
                                       <option value=false >Tidak Hadir</option>
                                     </select>
                               </div>
-                              <div class="col-md-12">
+                              <div class="col-md-12" id="ucapan-group">
                                   <label for="email" class="sr-only">Ucapan</label>
                                   <textarea placeholder="Ucapan" class="form-control" name="ucapan" rows="10"></textarea>
         
@@ -409,7 +409,58 @@
       function stopVideo() {
         player.stopVideo();
       }
-    </script>
+  </script>
+
+  <script>
+    // process the form
+    $('form').submit(function(event) {
+      // get the form data
+        // there are many ways to get this data using jQuery (you can use the class or id also)
+        var name = $('input[name=name]').val();
+        var kehadiran = ($('select[name=kehadiran]').val() == 'true');
+        var ucapan = $('textarea[name=ucapan]').val();
+
+        var formData = {
+            'name'      : name,
+            'kehadiran' : kehadiran,
+            'ucapan'    : ucapan
+        };
+
+        console.log(formData);
+
+        // process the form
+        $.ajax({
+          method: 'POST',
+          url: 'https://formsubmit.co/ajax/78efe6d29610c23c8f73cad1af3a9d87',
+          dataType: 'json',
+          accepts: 'application/json',
+          data: formData
+        })
+            // using the done promise callback
+            .done(function(data) {
+
+                // log data to the console so we can see
+                console.log(data);
+
+                // here we will handle errors and validation messages
+
+                $('form').html('<div class="alert alert-success">' + data.message + '</div>');
+            })
+
+            // using the fail promise callback
+            .fail(function(data) {
+
+              // log data to the console so we can see
+              console.log(data);
+
+              //Server failed to respond - Show an error message
+              $('form').html('<div class="alert alert-danger">Could not reach server, please try again later and refresh the page.</div>');
+            });
+
+        // stop the form from submitting the normal way and refreshing the page
+        event.preventDefault();
+      });
+  </script>
 
 
 
