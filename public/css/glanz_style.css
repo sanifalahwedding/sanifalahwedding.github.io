@@ -219,10 +219,10 @@ body {
       color: #fff;
   }
   .gla_great_titles h2 {
-      font:900 80px marsha, Arial;
+      font:900 80px bluu, Arial;
   }
   .gla_middle_titles h2 {
-      font:400 70px/80px marsha, Dosis;
+      font:400 70px/80px bluu, Dosis;
       margin-bottom: 30px;
       margin-top: 30px;
   }
@@ -232,7 +232,7 @@ body {
       transform:translateX(-50%);
   }
   .gla_middle_titles h2 span {
-      font:normal 400 41px/41px marsha, Arial;
+      font:normal 400 41px/41px bluu, Arial;
       letter-spacing: 0;
   }
   .gla_thin_titles h2 {
@@ -2439,7 +2439,7 @@ body {
           }
           .gla_slide_title,
           h2.gla_slide_title {
-              font:400 130px/117px marsha, Arial;
+              font:400 130px/117px bluu, Arial;
               margin-bottom: 30px;
           }
           .gla_slide_title {
@@ -2449,20 +2449,20 @@ body {
               margin-bottom: 20px;
           }
               .gla_slide_midtitle {
-                  font:900 80px/80px marsha, Arial;
+                  font:900 80px/80px bluu, Arial;
                   margin-bottom: 30px;
               }
               .gla_slide_title b {
                   font-weight: normal!important;
               }
               .gla_slide_title span {
-                  font:italic 400 80px/80px marsha, Arial!important;
+                  font:italic 400 80px/80px bluu, Arial!important;
               }
               .gla_slide_midtitle span {
-                  font:italic 400 50px/50px marsha, Arial!important;
+                  font:italic 400 50px/50px bluu, Arial!important;
               }
               .gla_slide_subtitle span {
-                  font:italic 400 20px/20px marsha, Arial!important;
+                  font:italic 400 20px/20px bluu, Arial!important;
               }
           .gla_slide_title_great {
               font:900 86px Dosis, Arial;
@@ -2972,7 +2972,7 @@ body {
   /*Badges*/
   .gla_badge_i_line1 {
       position: absolute;
-      font: 400 80px/80px marsha, Dosis, Arial;
+      font: 400 80px/80px bluu, Dosis, Arial;
       color: #000;
       width: 100%;
       text-align: center;
@@ -2980,7 +2980,7 @@ body {
   }
   .gla_badge_i_line2 {
       position: absolute;
-      font: 400 80px/80px marsha, Dosis, Arial;
+      font: 400 80px/80px bluu, Dosis, Arial;
       color: #000;
       width: 100%;
       text-align: center;
@@ -3112,7 +3112,7 @@ body {
   }
   .gla_flower2_name_l {
       position: absolute;
-      font:400 70px/70px marsha;
+      font:400 70px/70px bluu;
       right: 100%;
       top: 50%;
       transform:translateY(-50%);
@@ -3120,7 +3120,7 @@ body {
   }
   .gla_flower2_name_r {
       position: absolute;
-      font:400 70px/70px marsha;
+      font:400 70px/70px bluu;
       left: 100%;
       top: 50%;
       transform:translateY(-50%);
@@ -5963,7 +5963,7 @@ body {
   }
   /*h2 ganti jadi marhsa*/
   .gla_middle_titles h2 {
-      font:900 40px/60px marsha, Dosis, Arial;
+      font:900 40px/60px bluu, Dosis, Arial;
       margin-top: 20px;
       margin-bottom: 30px;
   }
