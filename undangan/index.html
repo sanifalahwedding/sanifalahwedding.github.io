@@ -13,7 +13,7 @@
 <title>Sani & Falah</title>
 
 <!-- Favicon -->
-<!-- <link rel="icon" href="https://akanmenikah.com/public/kartu/glance2/images/akanmenikah.ico" type="image/x-icon"> -->
+<!-- <link rel="icon" href="https://sanifalahwedding.github.io/public/kartu/glance2/images/akanmenikah.ico" type="image/x-icon"> -->
 
 <!-- Library CSS -->
 <link href="https://sanifalahwedding.github.io/public/css/glanz_library.css" rel="stylesheet">
@@ -113,7 +113,7 @@
 
             <div class="container text-center">
                        
-                <p><img src="https://akanmenikah.com/public/kartu/glance/images/animations/flowers.gif" data-bottom-top="@src:https://akanmenikah.com/public/kartu/glance/images/animations/flowers.gif" height="150" alt=""></p>
+                <p><img src="https://sanifalahwedding.github.io/public/picture/animations/flowers1.gif" data-bottom-top="@src:https://sanifalahwedding.github.io/public/picture/animations/flowers1.gif" height="150" alt=""></p>
 
                 <div id="invitationContent"></div>
             </div>
@@ -168,7 +168,7 @@
 
 
             <div class="container text-center">
-                <p><img src="https://akanmenikah.com/public/kartu/glance/images/animations/flower5.gif" data-bottom-top="@src:https://akanmenikah.com/public/kartu/glance/images/animations/flower5.gif" height="150" alt=""></p>
+                <p><img src="https://sanifalahwedding.github.io/public/picture/animations/flowers2.gif" data-bottom-top="@src:https://sanifalahwedding.github.io/public/picture/animations/flowers2.gif" height="150" alt=""></p>
 
                 <!-- boxes -->
                 <div class="gla_icon_boxes row text-left">
@@ -226,7 +226,7 @@
             <div class="gla_over" data-color="#282828" data-opacity="0.4"></div>
 
             <div class="container text-center">
-                <p><img src="https://akanmenikah.com/public/kartu/glance/images/animations/just_wh.gif" data-bottom-top="@src:https://akanmenikah.com/public/kartu/glance/images/animations/just_wh.gif" height="150" alt=""></p>
+                <p><img src="https://sanifalahwedding.github.io/public/picture/animations/just_married.gif" data-bottom-top="@src:https://sanifalahwedding.github.io/public/picture/animations/just_married.gif" height="150" alt=""></p>
                 <h3>Information</h3>
                 <p class="gla_subtitle">
                   <h2 style="line-height: 1.31;"><span class="JsGRdQ">Youtube Live :&nbsp;</span></h2>
@@ -243,7 +243,7 @@
 
 
             <div class="container text-center">
-              <p><img src="https://akanmenikah.com/public/kartu/glance/images/animations/flowers2.gif" data-bottom-top="@src:https://akanmenikah.com/public/kartu/glance/images/animations/flowers2.gif" height="150" alt=""></p>
+              <p><img src="https://sanifalahwedding.github.io/public/picture/animations/flowers3.gif" data-bottom-top="@src:https://sanifalahwedding.github.io/public/picture/animations/flowers3.gif" height="150" alt=""></p>
 
                           
             </div>
@@ -257,7 +257,7 @@
 
 
             <div class="container text-center">
-                <p><img src="https://akanmenikah.com/public/kartu/glance/images/animations/rsvp_wh.gif" data-bottom-top="@src:https://akanmenikah.com/public/kartu/glance/images/animations/rsvp_wh.gif" height="180" alt=""></p>
+                <p><img src="https://sanifalahwedding.github.io/public/picture/animations/rsvp.gif" data-bottom-top="@src:https://sanifalahwedding.github.io/public/picture/animations/rsvp.gif" height="180" alt=""></p>
 
                 <div class="row">
                     <div class="col-md-8 col-md-push-2">
@@ -303,7 +303,7 @@
 
 
             <div class="container text-center">
-                <p><img src="https://akanmenikah.com/public/kartu/glance/images/animations/thnyou_st.gif" alt="" height="200" data-bottom-top="@src:https://akanmenikah.com/public/kartu/glance/images/animations/thnyou.gif"></p>
+                <p><img src="https://sanifalahwedding.github.io/public/picture/animations/thankyou.gif" alt="" height="200" data-bottom-top="@src:https://sanifalahwedding.github.io/public/picture/animations/thankyou.gif"></p>
                  <div id="player"></div>
 
             </div>
@@ -414,62 +414,5 @@
 
 <script src="https://sanifalahwedding.github.io/public/js/scrolling-nav.js"></script>
 
-<script>
-function bukutamu()
-{
-    var nama = document.getElementById("name").value;
-    var ucapan = document.getElementById("ucapan").value;
-    var kehadiran = document.getElementById("kehadiran").value;
-    nama.replace(/&/g, "andamp;").replace(/>/g, "gt;").replace(/</g, "&lt;").replace(/"/g, "&quot;");
-    ucapan.replace(/&/g, "andamp;").replace(/>/g, "gt;").replace(/</g, "&lt;").replace(/"/g, "&quot;");
-
-    ucapan = removeEmojis (ucapan);
-    var id = 12300;
-    var xmlHttp = new XMLHttpRequest();
-    // var theUrl = 'https://akanmenikah.com/Kartu/isibukutamu/' +id+'/'+ nama +'/'+ucapan+'/'+kehadiran;
-    // alert(ucapan);
-    // xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
-    //   xmlHttp.send( null );
-    var theUrl = 'https://akanmenikah.com/kartu/postbukutamu';
-    var data = 'id=' +id +'&nama='+ encodeURIComponent(nama) + '&ucapan=' + encodeURIComponent(ucapan) + '&kehadiran=' + kehadiran;
-
-    // xhttp.send(data);
-    xmlHttp.addEventListener('load', function(event) {
-      alert('Terimakasih Telah Mengirim Ucapan');
-    });
-
-    // Define what happens in case of error
-    xmlHttp.addEventListener('error', function(event) {
-      alert('Mohon Maaf Pesan anda gagal terkirim, silahkan lakukan kembali');
-    });
-
-    xmlHttp.open("POST",theUrl,true);
-
-    xmlHttp.setRequestHeader("Content-type","application/x-www-form-urlencoded; charset=UTF-8");
-    xmlHttp.send(data);
-
-
-    xmlHttp.onreadystatechange = function() {
-          if (this.readyState == 4 && this.status == 200) {
-            console.log("status 200:"+ this.responseText);
-          }
-          if( this.status > 299 && this.readyState == 4) {
-              console.log('Server Error: ' + xmlHTTP.statusText);
-          }
-        };
-
-
-    xmlHttp.onerror = function() {
-      console.log('xmlHTTP Error', xmlHTTP.responseText)
-  };
-
-  function removeEmojis (string) {
-  var regex = /(?:[\u2700-\u27bf]|(?:\ud83c[\udde6-\uddff]){2}|[\ud800-\udbff][\udc00-\udfff]|[\u0023-\u0039]\ufe0f?\u20e3|\u3299|\u3297|\u303d|\u3030|\u24c2|\ud83c[\udd70-\udd71]|\ud83c[\udd7e-\udd7f]|\ud83c\udd8e|\ud83c[\udd91-\udd9a]|\ud83c[\udde6-\uddff]|\ud83c[\ude01-\ude02]|\ud83c\ude1a|\ud83c\ude2f|\ud83c[\ude32-\ude3a]|\ud83c[\ude50-\ude51]|\u203c|\u2049|[\u25aa-\u25ab]|\u25b6|\u25c0|[\u25fb-\u25fe]|\u00a9|\u00ae|\u2122|\u2139|\ud83c\udc04|[\u2600-\u26FF]|\u2b05|\u2b06|\u2b07|\u2b1b|\u2b1c|\u2b50|\u2b55|\u231a|\u231b|\u2328|\u23cf|[\u23e9-\u23f3]|[\u23f8-\u23fa]|\ud83c\udccf|\u2934|\u2935|[\u2190-\u21ff])/g;
-  return string.replace(regex, '');
-}
-
-    // document.getElementById('submit').disabled = true;
-}
-</script>
 </body>
 </html>
