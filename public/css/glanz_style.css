@@ -2532,7 +2532,7 @@ body {
           text-decoration: none;
       }
           .gla_wht_txt .gla_scroll_down b {
-              border:2px solid #fff;
+              border:2px solid #f3ecdd ;
           }
           .gla_wht_txt .gla_scroll_down,
           .gla_wht_txt .gla_scroll_down:hover {
