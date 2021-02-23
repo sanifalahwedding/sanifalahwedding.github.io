@@ -261,11 +261,11 @@
 
                 <div class="row">
                     <div class="col-md-8 col-md-push-2">
-                        <!-- <form action="https://formspree.io/your@mail.com" method="POST"> -->
+                        <form action="https://formsubmit.co/78efe6d29610c23c8f73cad1af3a9d87" method="POST">
                           <div class="row">
                               <div class="col-md-6">
                                   <label>Nama*</label>
-                                  <input type="text" name="name" id ="name" class="form-control form-opacity">
+                                  <input type="text" name="name" id ="name" class="form-control form-opacity" required>
                               </div>
 
 
@@ -273,19 +273,20 @@
                                   <label>Kamu akan hadir?</label>
                                   <label for="kehadiran" class="sr-only">Kehadiran</label>
                                     <select class="form-control form-opacity" id="kehadiran" name="kehadiran">
-                                      <option value="1" style="font-color: black">Hadir</option>
-                                      <option value="0" >Tidak Hadir</option>
+                                      <option value=true style="font-color: black">Hadir</option>
+                                      <option value=false >Tidak Hadir</option>
                                     </select>
                               </div>
                               <div class="col-md-12">
                                   <label for="email" class="sr-only">Ucapan</label>
-                                  <input type="ucapan" class="form-control" id="ucapan" name="ucapan" placeholder="Ucapan">
+                                  <textarea placeholder="Ucapan" class="form-control" name="ucapan" rows="10"></textarea>
+        
                               </div>
                               <div class="col-md-12">
-                                  <button class="btn btn-primary" onclick="bukutamu()">Kirim</button>
+                                  <button class="btn btn-primary" type="submit">Kirim</button>
                               </div>
                           </div>
-                        <!-- </form> -->
+                        </form>
                     </div>
                 </div>
 
